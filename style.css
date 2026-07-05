@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #f41e1e;
+  --text-color: #fff;
+  --beg-color: #141414;
+  --tranition-slow: all 0.4s;
+  --tranition-fast: all 0.6s;
+}
+
+/* navbar */
+.navbar {
+  height: 90px;
+  width: 100%;
+  background-color: var(--beg-color);
+  display: flex;
+  align-items: center;
+  padding: 0 12%;
+  border: none;
+  box-shadow: none;
+}
+
+.logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+    gap: 1rem;
+  border: none;
+}
+
+.logo h2 {
+  margin: 0;
+}
+
+.logo h2 a {
+  color: var(--text-color);
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.logo h2 a span {
+  color: var(--primary-color);
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu li a {
+  color: var(--text-color);
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.menu li::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 2px;
+  border-radius: 30px;
+  width: 0;
+  background-color: var(--primary-color);
+  transition: var(--tranition-slow);
+}
+
+.menu li:hover::after {
+  width: 100%;
+}
+.nav_icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav_icons i {
+  color: var(--text-color);
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.nav_icons i:hover {
+  color: var(--primary-color);
+}
+
