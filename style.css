@@ -109,7 +109,7 @@
   #toggle {
     display: block;
     color: var(--text-color);
-    background-color: var(--primary-color);
+    background: var(--primary-color);
     padding: 12px;
     font-size: 1.5rem;
   }
@@ -118,20 +118,27 @@
   }
   .menu {
     position: absolute;
+    height:0;
+    overflow: hidden;
     flex-direction: column;
     top: 100%;
     left: 0;
+    opacity: 0;
     background-color: var(--beg-color);
     width: 100%;
-    padding-left: 12%;
-    padding-bottom: 20px;
     gap: 0;
+    transition: var(--tranition-slow);
   }
-  .menu li{
-    margin-left: 12%;
-    width:100%;
+  .menu li {
+    width: 100%;
     padding: 20px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   }
+  .menu li a {
+    padding-left: 12%;
   }
-
+  .active {
+    height: 350px;
+    opacity: 1;
+  }
+}
