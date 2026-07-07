@@ -11,6 +11,15 @@
   --tranition-slow: all 0.4s;
   --tranition-fast: all 0.6s;
 }
+section {
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items:center;
+padding:120px 12%;
+}
+
+
 
 /* navbar */
 .navbar {
