@@ -30,10 +30,10 @@ section {
 }
 .section_img img {
   width: 100%;
-  height: auto;
-  max-width: 500px;
-  object-fit: contain;
-  mix-blend-mode: lighten;
+  height: 100%;
+  /* object-fit: contain; */
+  mix-blend-mode: difference;
+  
 }
 
 .section_title {
@@ -41,8 +41,19 @@ section {
   display: flex;
   flex-direction: column;
   align-items: start;
+  color:var(--text-color)
 }
 .section_title span {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.section_title h1 {
+  font-size: 6rem;
+  font-weight: 600;
+  margin: 10px 0;
 }
 
 /* navbar */
@@ -57,6 +68,7 @@ section {
   box-shadow: none;
   position: fixed;
   inset: 0;
+  border-bottom:1px solid rgba(255, 255, 255, 0.15);
   z-index: 999;
 }
 
