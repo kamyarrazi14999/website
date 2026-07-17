@@ -6,4 +6,10 @@ const toggle = document.querySelector('#toggle');
 toggle.addEventListener('click', () => {
     menu.classList.toggle('active');
 });
-
+var swiper = new Swiper('.Hero_Swiper', {
+   
+    
+    
+    
+    
+})

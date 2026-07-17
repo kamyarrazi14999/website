@@ -52,7 +52,7 @@ section {
 .section_title h1 {
   font-size: 4.5rem;
   font-weight: 600;
-  line-height: 7rem;
+  line-height: 6rem;
   letter-spacing: 2px;
   text-transform: uppercase;
   padding-bottom: 20px;
@@ -160,6 +160,31 @@ section {
   display: none;
 }
 /*Hero section  */
+.Hero_Swiper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Hero-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Hero_title h1{
+  font-size:3.5rem;
+}
+.Hero {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--beg-color);
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 0 12%;
+  overflow: hidden;
+}
 .Hero_bth {
   width: 100%;
   display: flex;
@@ -183,13 +208,12 @@ section {
   transition: var(--tranition-fast);
   text-transform: uppercase;
   border-radius: 100px;
-  padding:10px;
-  border:1px solid var(--primary-color);
+  padding: 10px;
+  border: 1px solid var(--primary-color);
 }
 .btn:hover {
-  background-color:transparent;
-  border:1px solid var(--primary-color);
-
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
 }
 .btn2 {
   height: 55px;
@@ -204,11 +228,11 @@ section {
   transition: var(--tranition-fast);
   text-transform: uppercase;
   border-radius: 100px;
-  padding:10px;
-  border:1px solid var(--primary-color);
+  padding: 10px;
+  border: 1px solid var(--primary-color);
 }
 .btn2:hover {
-  background-color:var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 @media screen and (max-width: 900px) {
