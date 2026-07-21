@@ -241,7 +241,7 @@ section {
   background-color: var(--primary-color);
 }
 @media screen and (max-width: 1400px) {
-  .Hero_title h1 {
+  .Hero_title h2 {
     font-size: 3.3rem !important;
     line-height: 5rem !important;
   }
@@ -258,14 +258,14 @@ section {
   .Hero_title {
     width: 100%;
   }
-  .Hero-item2 .Hero_title h1 {
+  .Hero-item2 .Hero_title h2 {
     font-size: 3.3rem !important;
     line-height: 5rem !important;
   }
   .Hero-item {
     flex-direction: column-reverse;
   }
-  .Hero-item .Hero_title h1 {
+  .Hero-item .Hero_title h2 {
     font-size: 3.3rem !important;
     line-height: 5rem !important;
   }
@@ -317,15 +317,15 @@ section {
     height: 312px;
     opacity: 1;
   }
-  .section_title h1 {
+  .section_title h2{
     font-size: 4.5rem !important;
     line-height: 4rem !important;
   }
-  .Hero-item2 .Hero_title h1 {
+  .Hero-item2 .Hero_title h2 {
     font-size: 4.5rem !important;
     line-height: 4rem !important;
   }
-  .Hero-item .Hero_title h1 {
+  .Hero-item .Hero_title h2 {
     font-size: 3rem !important;
   }
 }
@@ -333,9 +333,15 @@ section {
   .section_title span {
     font-size: 1rem;
   }
-  .section_title h1 {
+  .section_title h2 {
     font-size: 3rem !important;
     line-height: 3rem !important;
   }
 
+  }
+  @media  screen and(max-width:500px) {
+    .Hero_img img {
+      width: 90% !important;
+    }
+    .Hero_item2 .Hero_title h2
   }
