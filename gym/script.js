@@ -7,6 +7,9 @@ toggle.addEventListener('click', () => {
     menu.classList.toggle('active');
 });
 var swiper = new Swiper('.Hero_Swiper', {
+    loop: true,
+    autoplay: true,
+    spaceBetween: 30,
    
     
     

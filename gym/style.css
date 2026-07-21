@@ -31,8 +31,9 @@ section {
 .section_img img {
   width: 100%;
   height: 100%;
-  /* object-fit: contain; */
+  object-fit: contain;
   mix-blend-mode: lighten;
+  padding-top: 7rem;
 }
 
 .section_title {
@@ -52,7 +53,7 @@ section {
 .section_title h1 {
   font-size: 4.5rem;
   font-weight: 600;
-  line-height: 6rem;
+  line-height: 5rem;
   letter-spacing: 2px;
   text-transform: uppercase;
   padding-bottom: 20px;
@@ -160,6 +161,9 @@ section {
   display: none;
 }
 /*Hero section  */
+.Hero {
+  min-height: 100vh;
+}
 .Hero_Swiper {
   width: 100%;
   display: flex;
@@ -172,8 +176,10 @@ section {
   justify-content: space-between;
   align-items: center;
 }
-.Hero_title h1{
-  font-size:3.5rem;
+.Hero_item2 .Hero_title h1 {
+  font-size: 2.6rem;
+  line-height: 3.8rem;
+  padding: 20px 0;
 }
 .Hero {
   height: 100vh;
@@ -234,6 +240,46 @@ section {
 .btn2:hover {
   background-color: var(--primary-color);
 }
+@media screen and (max-width: 1400px) {
+  .Hero_title h1 {
+    font-size: 3.3rem !important;
+    line-height: 5rem !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .section_title h1 {
+    font-size: 2.5rem !important;
+    line-height: 6rem !important;
+  }
+  .Hero {
+    flex-direction: column;
+  }
+  .Hero_title {
+    width: 100%;
+  }
+  .Hero-item2 .Hero_title h1 {
+    font-size: 3.3rem !important;
+    line-height: 5rem !important;
+  }
+  .Hero-item {
+    flex-direction: column-reverse;
+  }
+  .Hero-item .Hero_title h1 {
+    font-size: 3.3rem !important;
+    line-height: 5rem !important;
+  }
+  .Hero-item {
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+  .Hero_img img {
+    width: 55%;
+  }
+  .Hero_img {
+    width: 100%;
+  }
+}
 
 @media screen and (max-width: 900px) {
   #toggle {
@@ -271,4 +317,25 @@ section {
     height: 312px;
     opacity: 1;
   }
+  .section_title h1 {
+    font-size: 4.5rem !important;
+    line-height: 4rem !important;
+  }
+  .Hero-item2 .Hero_title h1 {
+    font-size: 4.5rem !important;
+    line-height: 4rem !important;
+  }
+  .Hero-item .Hero_title h1 {
+    font-size: 3rem !important;
+  }
 }
+@media screen and(max-width:768px) {
+  .section_title span {
+    font-size: 1rem;
+  }
+  .section_title h1 {
+    font-size: 3rem !important;
+    line-height: 3rem !important;
+  }
+
+  }
