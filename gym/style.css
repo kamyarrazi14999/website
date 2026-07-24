@@ -50,7 +50,7 @@ section {
   color: var(--primary-color);
 }
 
-.section_title h1 {
+.section_title h2 {
   font-size: 4.5rem;
   font-weight: 600;
   line-height: 5rem;
@@ -201,6 +201,34 @@ section {
   width: 80%;
   height: 80%;
 }
+/* marguee */
+.marguee{
+  background-color: #1d2229;
+  padding: 10px;
+}
+.marguee{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+ gap: 20px;
+ text-transform: uppercase;
+ 
+}
+ .marguee h1{
+  color:var(--text-color);
+  font-size:6rem;
+  font-weight: 700;
+  letter-spacing:8px;
+  text-transform: uppercase;
+  
+}
+.marguee span {
+  color:var(--primary-color);
+  text-transform: uppercase;
+  /* overflow: hidden; */
+}
+
 .btn {
   height: 55px;
   width: 180px;
@@ -317,7 +345,7 @@ section {
     height: 312px;
     opacity: 1;
   }
-  .section_title h2{
+  .section_title h2 {
     font-size: 4.5rem !important;
     line-height: 4rem !important;
   }
@@ -329,7 +357,7 @@ section {
     font-size: 3rem !important;
   }
 }
-@media screen and(max-width:768px) {
+@media screen and (max-width:768px) {
   .section_title span {
     font-size: 1rem;
   }
@@ -337,11 +365,21 @@ section {
     font-size: 3rem !important;
     line-height: 3rem !important;
   }
-
+}
+@media screen and (max-width: 500px) {
+  .Hero_img img {
+    width: 90% !important;
   }
-  @media  screen and(max-width:500px) {
-    .Hero_img img {
-      width: 90% !important;
-    }
-    .Hero_item2 .Hero_title h2
+  .Hero_item2 .Hero_title h2 {
+    font-size: 1.5rem !important;
+    line-height: 2.5rem !important;
   }
+  .section_title p {
+    font-size: 1rem;
+  }
+  .btn,.btn2 {
+    width:150px;
+    font-size: 1rem;
+    height: 50px;
+  }
+}
