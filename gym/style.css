@@ -532,6 +532,10 @@ section {
   transition: var(--tranition-fast);
   overflow: hidden;
 }
+.upcoming_classes_item:hover .upcoming_class_image img {
+  transform: scale(1.1);
+}
+
 .upcoming_classes_title {
   width: 100%;
   text-align: center;
@@ -548,6 +552,7 @@ section {
   object-fit: cover;
   display: block;
   border-radius: 10px;
+  transition: var(--tranition-slow);
 }
 .upcoming_classes_info {
   width: 100%;
@@ -557,11 +562,16 @@ section {
   text-align: center;
   color: var(--text-color);
   gap: 20px;
-  padding: 20px 0;
+  padding: 20px 10px;
 }
 .upcoming_classes_info h3 {
   font-size: 2rem;
   font-weight: 500;
+  letter-spacing: 1px;
+}
+.upcoming_classes_info p {
+  font-size: 1.1rem;
+  font-weight: 400;
   letter-spacing: 1px;
 }
 
