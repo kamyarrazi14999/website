@@ -8,8 +8,9 @@
   --primary-color: #f41e1e;
   --text-color: #fff;
   --beg-color: #141414;
-  --tranition-slow: all 0.4s;
-  --tranition-fast: all 0.6s;
+  --white-color: #fff;
+  --transition-slow: all 0.4s;
+  --transition-fast: all 0.6s;
 }
 body {
   background-color: #1d2229;
@@ -137,7 +138,7 @@ section {
   border-radius: 30px;
   width: 0;
   background-color: var(--primary-color);
-  transition: var(--tranition-slow);
+  transition: var(--transition-slow);
 }
 
 .menu li:hover::after {
@@ -152,7 +153,7 @@ section {
 .nav_icons i {
   color: var(--text-color);
   font-size: 1.3rem;
-  transition: var(--tranition-slow);
+  transition: var(--transition-slow);
   cursor: pointer;
 }
 .nav_icons i:hover {
@@ -291,7 +292,7 @@ section {
   background: #1d2229;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
   border: 1px solid rgba(255, 255, 255, 0.15);
-  transition: var(--tranition-fast);
+  transition: var(--transition-fast);
   color: var(--white-color);
 }
 .Service-item:hover {
@@ -327,7 +328,7 @@ section {
   border-radius: 50%;
   background-color: #2d333d;
   border: 5px solid var(--beg-color);
-  transition: var(--tranition-slow);
+  transition: var(--transition-slow);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -385,7 +386,7 @@ section {
   letter-spacing: 1px;
   font-weight: 600;
   cursor: pointer;
-  transition: var(--tranition-fast);
+  transition: var(--transition-fast);
   text-transform: uppercase;
   border-radius: 100px;
   padding: 5px;
@@ -405,7 +406,7 @@ section {
   font-weight: 600;
   background-color: transparent;
   cursor: pointer;
-  transition: var(--tranition-fast);
+  transition: var(--transition-fast);
   text-transform: uppercase;
   border-radius: 100px;
   padding: 10px;
@@ -431,7 +432,7 @@ section {
   margin: 12px 0;
   position: relative;
   margin-left: 30px;
-  transition: var(--tranition-slow);
+  transition: var(--transition-slow);
 }
 .About_title ul li::after {
   content: "";
@@ -443,7 +444,7 @@ section {
   top: 55%;
   left: -10%;
   border-radius: 30px;
-  transition: var(--tranition-slow);
+  transition: var(--transition-slow);
   transform: translate(-50%);
 }
 .About_title ul li:hover {
@@ -499,7 +500,7 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  z-index: -1;
+  /* z-index: -1; */
 }
 .upcoming_classes::after {
   content: " ";
@@ -509,7 +510,7 @@ section {
   top: 0%;
   left: 0%;
   background-color: rgba(0, 0, 0, 0.6);
-  z-index: -1;
+  z-index: 1;
 }
 .swiper {
   width: 100%;
@@ -529,11 +530,19 @@ section {
   position: relative;
   box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.1);
   border: 2px solid #2d333d;
-  transition: var(--tranition-fast);
+  transition: var(--transition-slow);
   overflow: hidden;
 }
 .upcoming_classes_item:hover .upcoming_class_image img {
   transform: scale(1.1);
+}
+.upcoming_classes_item:hover .upcoming_classes_info h3 {
+  color: var(--primary-color);
+}
+.upcoming_classes_title,
+.upcoming_classes_swiper {
+  position: relative;
+  z-index: 2;
 }
 
 .upcoming_classes_title {
@@ -552,7 +561,7 @@ section {
   object-fit: cover;
   display: block;
   border-radius: 10px;
-  transition: var(--tranition-slow);
+  transition: var(--transition-slow);
 }
 .upcoming_classes_info {
   width: 100%;
@@ -568,12 +577,15 @@ section {
   font-size: 2rem;
   font-weight: 500;
   letter-spacing: 1px;
+  transition: var(--transition-slow);
 }
 .upcoming_classes_info p {
   font-size: 1.1rem;
   font-weight: 400;
   letter-spacing: 1px;
 }
+
+
 
 /* ================= RESPONSIVE ================= */
 

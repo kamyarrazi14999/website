@@ -16,5 +16,5 @@ var swiper2 = new Swiper(".upcoming_classes_swiper", {
   autoplay: true,
   slidesPerView: 3,
   spaceBetween: 50,
- 
+  
 });
