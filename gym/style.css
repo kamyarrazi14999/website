@@ -577,7 +577,7 @@ section {
   font-size: 2rem;
   font-weight: 500;
   letter-spacing: 1px;
-  transition: var(--transition-slow);
+  transition: var(--transition-fast);
 }
 .upcoming_classes_info p {
   font-size: 1.1rem;
