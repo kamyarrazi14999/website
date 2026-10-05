@@ -46,31 +46,16 @@ var swiper2 = new Swiper(".upcoming_classes_swiper", {
     },
   },
 });
-var swiper2 = new Swiper(".Trainer_Swiper", {
-  loop: true,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
-  slidesPerView: 3,
-  spaceBetween: 50,
+
+var trainerSwiper = new Swiper(".Trainer_Swiper", {
+  loop: false,
+  rewind: true,
+  autoplay: { delay: 3000, disableOnInteraction: false },
+  slidesPerView: 1,
+  spaceBetween: 20,
   breakpoints: {
-    1600: {
-      slidesPerView: 4,
-      spaceBetween: 30,
-    },
-    1400: {
-      slidesPerView: 2.5,
-    },
-    1200: {
-      slidesPerView: 2.1,
-    },
-    768: {
-      slidesPerView: 1,
-    },
-    500: {
-      slidesPerView: 1,
-    },
+    560: { slidesPerView: 2 },
+    800: { slidesPerView: 3, spaceBetween: 24 },
+    1050: { slidesPerView: 4, spaceBetween: 28 },
   },
 });
-
