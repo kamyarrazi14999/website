@@ -10,7 +10,7 @@ if (toggle) {
 }
 
 var swiper = new Swiper(".Hero_Swiper", {
-  loop: false,
+  loop: true,
   autoplay: {
     delay: 3000,
     disableOnInteraction: false,
@@ -47,15 +47,15 @@ var swiper2 = new Swiper(".upcoming_classes_swiper", {
   },
 });
 
-var trainerSwiper = new Swiper(".Trainer_Swiper", {
+var trainerSwiper = new Swiper(".Trainer_swiper", {
   loop: false,
   rewind: true,
   autoplay: { delay: 3000, disableOnInteraction: false },
-  slidesPerView: 1,
-  spaceBetween: 20,
+  slidesPerView: 1.15,
+  spaceBetween: 16,
   breakpoints: {
     560: { slidesPerView: 2 },
     800: { slidesPerView: 3, spaceBetween: 24 },
-    1050: { slidesPerView: 4, spaceBetween: 28 },
+    1050: { slidesPerView: 3, spaceBetween: 28 },
   },
 });
